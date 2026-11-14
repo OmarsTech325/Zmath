@@ -154,7 +154,7 @@ const loadQuickApps = async () => {
       }
 
       const appLink = document.createElement("a");
-      appLink.href = `/browse?to=${encodeUrlForProxy(appPath)}`;
+      appLink.href = `/Zmath/browse?to=${encodeUrlForProxy(appPath)}`;
       appLink.className = "quick-app-item";
       appLink.setAttribute("title", appName);
       appLink.style.animationDelay = `${index * 0.05}s`;
@@ -182,7 +182,7 @@ if (form) {
     event.preventDefault();
     hideError();
     const url = search(address.value, searchEngine.value);
-    window.location.href = `/browse?to=${encodeUrlForProxy(url)}`;
+    window.location.href = `/Zmath/browse?to=${encodeUrlForProxy(url)}`;
   });
 }
 
